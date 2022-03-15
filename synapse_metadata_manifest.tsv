@@ -1,0 +1,23 @@
+path	parent	name	id	synapseStore	contentType	used	executed	activityName	activityDescription
+d:\projects\tdc\src\requirements.txt	syn22175932	requirements.txt	syn22175936	True	text/plain				
+d:\projects\tdc\src\readme.md	syn22175932	README.md	syn22175935	True	text/markdown				
+d:\projects\tdc\src\setup_docker.sh	syn22175932	setup_docker.sh	syn22175937	True	application/x-shellscript				
+d:\projects\tdc\src\dockerfile	syn22175932	Dockerfile	syn22175940	True	application/octet-stream				
+d:\projects\tdc\src\run_model.py	syn22175932	run_model.py	syn22175939	True	text/x-python				
+d:\projects\tdc\src\tdc_metrics.py	syn22175932	tdc_metrics.py	syn22175944	True	text/x-python				
+d:\projects\tdc\src\tdc_models.py	syn22175932	tdc_models.py	syn22175943	True	text/x-python				
+d:\projects\tdc\src\gencode.v31.annotation.gtf.len.ensembl.hugo.pklz	syn22175932	gencode.v31.annotation.gtf.len.ensembl.hugo.pklz	syn22175938	True	application/octet-stream				
+d:\projects\tdc\src\sub_challenge_2\signature_matrix_combo_fine.xlsx	syn22175941	signature_matrix_combo_fine.xlsx	syn22175942	True	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet				
+d:\projects\tdc\src\output\predictions.csv	syn22175933	predictions.csv	syn22175934	True	text/csv				
+d:\projects\tdc\src\sub_challenge_1\signature_matrix_combo_coarse.xlsx	syn22175959	signature_matrix_combo_coarse.xlsx	syn22175960	True	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet				
+d:\projects\tdc\src\tools\io.py	syn22175945	io.py	syn22175957	True	text/x-python				
+d:\projects\tdc\src\tools\fromfunctools.py	syn22175945	fromFunctools.py	syn22175958	True	text/x-python				
+d:\projects\tdc\src\tools\genenameconverter.py	syn22175945	GeneNameConverter.py	syn22175948	True	text/x-python				
+d:\projects\tdc\src\tools\__pycache__\makemarkerdict.cpython-36.pyc	syn22175949	MakeMarkerDict.cpython-36.pyc	syn22175951	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\genenameconverter.cpython-37.pyc	syn22175949	GeneNameConverter.cpython-37.pyc	syn22175954	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\genenameconverter.cpython-36.pyc	syn22175949	GeneNameConverter.cpython-36.pyc	syn22175952	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\makemarkerdict.cpython-37.pyc	syn22175949	MakeMarkerDict.cpython-37.pyc	syn22175955	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\__init__.cpython-36.pyc	syn22175949	__init__.cpython-36.pyc	syn22175956	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\io.cpython-36.pyc	syn22175949	io.cpython-36.pyc	syn22175953	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\__init__.cpython-37.pyc	syn22175949	__init__.cpython-37.pyc	syn22175950	True	application/x-python-code				
+d:\projects\tdc\src\tools\pickledgeneconverterdict\ensembl_hugo_entrez_alias_dict.pythdat	syn22175946	ensembl_hugo_entrez_alias_dict.pythdat	syn22175947	True	application/octet-stream				

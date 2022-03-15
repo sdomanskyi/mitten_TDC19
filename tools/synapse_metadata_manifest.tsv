@@ -1,0 +1,12 @@
+path	parent	name	id	synapseStore	contentType	used	executed	activityName	activityDescription
+d:\projects\tdc\src\tools\io.py	syn22175945	io.py	syn22175957	True	text/x-python				
+d:\projects\tdc\src\tools\fromfunctools.py	syn22175945	fromFunctools.py	syn22175958	True	text/x-python				
+d:\projects\tdc\src\tools\genenameconverter.py	syn22175945	GeneNameConverter.py	syn22175948	True	text/x-python				
+d:\projects\tdc\src\tools\__pycache__\makemarkerdict.cpython-36.pyc	syn22175949	MakeMarkerDict.cpython-36.pyc	syn22175951	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\genenameconverter.cpython-37.pyc	syn22175949	GeneNameConverter.cpython-37.pyc	syn22175954	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\genenameconverter.cpython-36.pyc	syn22175949	GeneNameConverter.cpython-36.pyc	syn22175952	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\makemarkerdict.cpython-37.pyc	syn22175949	MakeMarkerDict.cpython-37.pyc	syn22175955	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\__init__.cpython-36.pyc	syn22175949	__init__.cpython-36.pyc	syn22175956	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\io.cpython-36.pyc	syn22175949	io.cpython-36.pyc	syn22175953	True	application/x-python-code				
+d:\projects\tdc\src\tools\__pycache__\__init__.cpython-37.pyc	syn22175949	__init__.cpython-37.pyc	syn22175950	True	application/x-python-code				
+d:\projects\tdc\src\tools\pickledgeneconverterdict\ensembl_hugo_entrez_alias_dict.pythdat	syn22175946	ensembl_hugo_entrez_alias_dict.pythdat	syn22175947	True	application/octet-stream				
