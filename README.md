@@ -5,10 +5,18 @@
 + Thomas Bertus (bertusth@msu.edu)
 + Prof. Carlo Piermarocchi (piermaro@msu.edu)
 
+## Method description
 
 This repository contains source code from [synapse.org: mitten_TDC19](https://www.synapse.org/#!Synapse:syn22175932) and documentation on how to run the scripts.
 
 The method writeup can be found on synapse [Wiki page](https://www.synapse.org/#!Synapse:syn20330693/wiki/604067) of our team.
+
+Here we provide pre-trained models in form of the signature matrices for Submissions 1, 2, 3 of the Final Round of the challenge for both coarse-grained and fine-grained subchallenges. The spreadsheet files are in `signature` directory of this repository. The name of each of the 6 signature matrices contains subchallenge identifier and final round number:
+
++ File `coarse_final_round_2.xlsx` contains all markers from `coarse_final_round_1.xlsx` plus 63 additional markers for CD4.T.cells and 5 additional markers for CD8.T.cells. File `coarse_final_round_3.xlsx` is identical to `coarse_final_round_1.xlsx`.
+
++ File `fine_final_round_2.xlsx` contains all markers from `fine_final_round_1.xlsx` plus 150 additional markers for myeloid.dendritic.cells and 9 additional markers for memory.CD4.T.cells. File `fine_final_round_3.xlsx` contains all markers from `fine_final_round_1.xlsx` plus 5 additional markers for myeloid.dendritic.cells and 9 additional markers for memory.CD4.T.cells. 
+
 
 ## Installation
 
@@ -24,7 +32,7 @@ git clone https://github.com/sdomanskyi/mitten_TDC19.git
 
 Run ```python run_model.py --help``` to see description of all command line options.
 
-> Note: This repository contains source code that was used in Rounds 1, 2, 3 and Final Round of the chalenge. The parameters exposed in the script `run_model.py` constitute the minimal set to process new data. The details of each run can be found at [synapse.org: mitten_TDC19](https://www.synapse.org/#!Synapse:syn22175932).
+> Note: This repository contains source code that was used in Submissions 1, 2, 3 of the Final Round of the challenge, as well as the Leaderboard Rounds. The parameters exposed in the script `run_model.py` constitute the minimal set to reproduce the Final Rounds submissions and process any new user-provided data.
 
 Input file `input.csv` should contain at least 3 columns as described below. Every row in the input file corresponds to a dataset:
 
@@ -34,17 +42,39 @@ Input file `input.csv` should contain at least 3 columns as described below. Eve
 | scale | Descriptor of how the gene expression data was scaled, e.g. linear, log2 |
 | hugo.expr.file  | Name of the file with normalized gene expression and gene symbol gene identifiers  |
 
-Example of coarse-grained model run:
 
+Coarse-grained model run for Final Round 1:
 ```
-python run_model.py --input=input/input.csv --model-level=coarse --signature-matrix=signature/signature_matrix_combo_coarse.xlsx
+python run_model.py --input=input/input.csv --model-level=coarse --signature-matrix=signature/coarse_final_round_1.xlsx
 ```
 
-Example of fine-grained model run:
+Fine-grained model run for Final Round 1:
+```
+python run_model.py --input=input/input.csv --model-level=fine --signature-matrix=signature/fine_final_round_1.xlsx
+```
 
+Coarse-grained model run for Final Round 2:
 ```
-python run_model.py --input=input/input.csv --model-level=fine --signature-matrix=signature/signature_matrix_combo_fine.xlsx
+python run_model.py --input=input/input.csv --model-level=coarse --signature-matrix=signature/coarse_final_round_2.xlsx
 ```
+
+Fine-grained model run for Final Round 2:
+```
+python run_model.py --input=input/input.csv --model-level=fine --signature-matrix=signature/fine_final_round_2.xlsx
+```
+
+Coarse-grained model run for Final Round 3:
+```
+python run_model.py --number-hvg=15 --input=input/input.csv --model-level=coarse --signature-matrix=signature/coarse_final_round_3.xlsx
+```
+
+Fine-grained model run for Final Round 3:
+```
+python run_model.py --number-hvg=15 --input=input/input.csv --model-level=fine --signature-matrix=signature/fine_final_round_3.xlsx
+```
+
+> Note: In Final Round 3 we limited the number of highly variable genes to 15 by passing parameter `--number-hvg=15`.
+
 
 Output file(s) is generated in the directory `output`. Below is the output file from the coarse-grained model run. Prediction is relative abundance score of a given sample for a given cell type.
 

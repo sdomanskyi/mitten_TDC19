@@ -143,7 +143,7 @@ class TumorDeconvolutionModels:
             df_dataset = df_data.xs(dataset, level=0, axis=1).reindex(df_signature.index).fillna(0.)
 
             if not num2keep is None:
-                print("selecting genes with a high coefficient of variance")
+                print("selecting %s genes with a high coefficient of variation" % num2keep)
                 top_coef_genes = self.keep_top_coef_of_var(df_dataset, df_signature, num2keep).unique()
                 df_dataset = df_dataset.loc[top_coef_genes, :]
                 df_signature = df_signature.loc[top_coef_genes, :]
