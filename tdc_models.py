@@ -12,7 +12,7 @@ import scipy.stats
 import warnings
 warnings.simplefilter("ignore", ConvergenceWarning)
 warnings.simplefilter("ignore", RuntimeWarning)
-print('Ignoring any warnings of type: ConvergenceWarning, RuntimeWarning')
+#print('Ignoring any warnings of type: ConvergenceWarning, RuntimeWarning')
 
 class TumorDeconvolutionModels:
 
@@ -25,7 +25,7 @@ class TumorDeconvolutionModels:
         self.model_level = model_level
         self.model_name = model_name
         self.round = round
-        self.inputDir = os.path.join('input', '')
+        self.inputDir = ''
         self.outputDir = os.path.join('output', '')
         self.df_gold_standard = gs
         self.df_data = df_data
@@ -77,7 +77,7 @@ class TumorDeconvolutionModels:
             dataset = s_meta_data.loc['dataset.name']
 
             # Read data
-            df_data_temp = pd.read_csv(os.path.join(self.inputDir, s_meta_data['hugo.expr.file'].strip('"').strip('/').strip('input').strip('/')), index_col='Gene')
+            df_data_temp = pd.read_csv(os.path.join(os.path.dirname(self.input_name), s_meta_data['hugo.expr.file'].strip('"').strip('/').strip('input').strip('/')), index_col='Gene')
 
             # Replace missing values with 0
             df_data_temp.fillna(0, inplace=True)
@@ -183,7 +183,7 @@ class TumorDeconvolutionModels:
         if not os.path.exists(os.path.join('output', '')):
             os.makedirs(os.path.join('output', ''))
 
-        np.savetxt(os.path.join('output', 'predictions.csv'), np.vstack(predictions), fmt='%s', delimiter=',')
+        np.savetxt(os.path.join('output', 'predictions_%s.csv' % model_level), np.vstack(predictions), fmt='%s', delimiter=',')
 
         return
 

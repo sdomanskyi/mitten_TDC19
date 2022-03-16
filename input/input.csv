@@ -1,0 +1,3 @@
+dataset.name,scale,hugo.expr.file
+FIVA1,Linear,FIVA1-hugo-gene-expr.csv.gz
+FIAS5,Log2,FIAS5-hugo-gene-expr.csv.gz
