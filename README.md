@@ -20,13 +20,17 @@ Here we provide pre-trained models in form of the signature matrices for Submiss
 
 ## Installation
 
-Pre-Installation Requirement: to use this software on any platform you need Python version 3.7 or higher. Also install packages `numpy`, `pandas`, `scipy`, `xlrd`, `matplotlib`, `mygene`, `sklearn` used in the scripts.
+Pre-Installation Requirement: to use this software on any platform you need Python version 3.7 or higher. Install packages `numpy`, `pandas`, `scipy`, `xlrd`, `matplotlib`, `mygene`, `sklearn` used in the scripts.
 
 To clone this repository run:
 
 ```
 git clone https://github.com/sdomanskyi/mitten_TDC19.git
 ```
+
+## Typical install time
+Installation of the packages `numpy`, `pandas`, `scipy`, `xlrd`, `matplotlib`, `mygene`, `sklearn` on a normal desktop computer takes about 5 minutes.
+Installation of this git repository takes a few seconds.
 
 ## Usage
 
@@ -91,6 +95,8 @@ Output file(s) is generated in the directory `output`. Below is the output file 
 |FIAS5       |S2       |B.cells          |2.200313867|
 | ~trimmed~  |
 
+## Expected run time
+It took approximately 1 minute to run each of the 6 scenarios detailed above.
 
 ## Licensing
 This software is released under an MIT License. Please also consult the file LICENSE in this repository regarding Licensing information for use of external associated content.
